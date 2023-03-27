@@ -9,9 +9,7 @@ class Hello extends Component {
       counter: 0
     }
   }
-  componentDidCatch() {
-    console.log('componentDidCatch')
-  }
+
   componentDidMount() {
     console.log('componentDidMount')
   }
