@@ -50,7 +50,7 @@ const Users = () => {
     })()
   }, [])
   return (<>
-    <div id={process.env.REACT_APP_ID}>
+    <div id={'hello'}>
       <input type='search' placeholder='search users' onChange={search} />
       <div className='users-info'>
         {searchedUsers.map((u, i) => {
