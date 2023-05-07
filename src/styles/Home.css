@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+}
+
+.main {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.text {
+    font-family: monospace;
+    font-size: 25px;
+    animation-name: example;
+    animation-duration: 4s;
+    padding: 15px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.text:hover {
+    background: white;
+    color: black;
+    font-size: 25px;
+    animation-duration: 4s;
+    animation-name: hoveting;
+}
+
+@keyframes hoveting {
+    0% {
+        color: white;
+        border: 3px solid white;
+
+    }
+
+    14.3% {
+        color: black;
+        border: 2px solid black;
+    }
+
+    100% {
+        color: black;
+        border: 2px solid black;
+
+    }
+}
+
+@keyframes example {
+    0% {
+        color: black;
+        border: 2px solid black;
+    }
+
+    14.3% {
+        color: black;
+        border: 2px solid black;
+    }
+
+    100% {
+        color: white;
+        border: 3px solid white;
+        animation-play-state: paused;
+    }
+}
