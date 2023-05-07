@@ -54,8 +54,9 @@ const Users = () => {
       <input type='search' placeholder='search users' onChange={search} />
       <div className='users-info'>
         {searchedUsers.map((u, i) => {
-          const srcUrl = `https://robohash.org/1?set=set${i + 1}`
-          return <User key={u.id} user={u} srcUrl={srcUrl} handleChange={handleChange} />
+          // const srcUrl = `https://robohash.org/1?set=set${i + 1}`
+          // return <User key={u.id} user={u} srcUrl={srcUrl} handleChange={handleChange} />
+          return <div>U</div>
         })}
       </div>
       <button onClick={() => {
